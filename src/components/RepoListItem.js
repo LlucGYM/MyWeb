@@ -17,7 +17,20 @@ export default function RepoListItem(props) {
                 </tr>
                 <tr>
                     <td>
+                    <p>{props.dataCreation}</p>
+                    </td>
+                    <td>
+                    <p>{props.dataLastUpdate}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     <p>{props.description}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p>{props.topics}</p>
                     </td>
                 </tr>
             </table>

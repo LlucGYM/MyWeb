@@ -17,7 +17,10 @@ export default function RepoList() {
                 return (
                     <RepoListItem 
                         name={arrayItem.full_name}
+                        dataCreation = {arrayItem.created_at}
+                        dataLastUpdate = {arrayItem.updated_at}
                         description={arrayItem.description} 
+                        topics = {arrayItem.topics}
                     />
                 );
             })
