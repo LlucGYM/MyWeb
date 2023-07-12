@@ -1,13 +1,18 @@
 import React from "react";
 import RepoList from "./components/RepoList";
 import Profile from "./components/Profile";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Main(){
 
     return(
-        <div id="main">
-            <Profile/>
-            <RepoList/>
-        </div>
+        <Container id="main">
+            <Row>
+                <Col>
+                    <Profile/>
+                    <RepoList/>
+                </Col>
+            </Row>
+        </Container>
     );
 }

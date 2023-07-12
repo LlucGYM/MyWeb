@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from "react";
 import RepoListItem from "./RepoListItem";
+import { Col, Row, Container } from "react-bootstrap";
 
 export default function RepoList() {
     const repoUserName = "LlucGYM"
@@ -29,9 +30,17 @@ export default function RepoList() {
     }
 
     return (
-        <div>
-            <h1>Repositorios</h1>
-            {arrayItems}
-        </div>
+        <Container id="Repositorios">
+            <Row>
+                <Col>
+                <h1>Repositorios</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    {arrayItems}
+                </Col>
+            </Row>
+        </Container>
     );
 }

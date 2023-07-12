@@ -1,39 +1,38 @@
 import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function RepoListItem(props) {
 
     return (
-        <div class ="ObjetoRepo">
-            <table>
-                <tr>
-                    <td>
+        <Container class ="ObjetoRepo">
+                <Row>
+                    <Col>
                     <h3>{props.name}</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                     <img alt="Imagen Repositorio"></img>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                     <p>{props.dataCreation}</p>
-                    </td>
-                    <td>
+                    </Col>
+                    <Col>
                     <p>{props.dataLastUpdate}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                     <p>{props.description}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                     <p>{props.topics}</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                    </Col>
+                </Row>
+        </Container>
     );
 }
