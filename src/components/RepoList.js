@@ -30,7 +30,7 @@ export default function RepoList() {
 
     return (
         <div>
-            <h1>Lista de Repositorios</h1>
+            <h1>Repositorios</h1>
             {arrayItems}
         </div>
     );
