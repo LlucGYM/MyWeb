@@ -3,10 +3,9 @@
     height: 10%;
     width: 10%;
     border-radius: 50%;
-    border: solid 1px black;
+    transition: all .4s ease-in-out; 
 }
 
 #imageProfile img:hover {
     scale: 1.1;
-    transition: 0.5s;
 }

@@ -17,6 +17,7 @@ export default function RepoList() {
             const items = data.map((arrayItem) => {
                 return (
                     <RepoListItem 
+                        key={arrayItem.id}
                         name={arrayItem.full_name}
                         dataCreation = {arrayItem.created_at}
                         dataLastUpdate = {arrayItem.updated_at}
@@ -33,7 +34,7 @@ export default function RepoList() {
         <Container id="Repositorios">
             <Row>
                 <Col>
-                <h1>Repositorios</h1>
+                <h2>Repositorios</h2>
                 </Col>
             </Row>
             <Row>

@@ -1,0 +1,22 @@
+
+#footer{
+    color: white;
+    background-color: #171e27;
+    padding: 5% 5% 5% 5%;
+    position: relative;
+}
+
+#footer div{
+    display: inline;
+}
+
+
+#footer .col{
+    margin: 2.5%;
+}
+
+.color1 {color: #140f07;}
+.color2 {color: #171e27;}
+.color3 {color: #3a506a;}
+.color4 {color: #6086b5;}
+.color5 {color: #8bc3fa;}

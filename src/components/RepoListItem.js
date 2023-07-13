@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function RepoListItem(props) {
-
     return (
-        <Container class ="ObjetoRepo">
+        <Container className ="ObjetoRepo">
                 <Row>
                     <Col>
                     <h3>{props.name}</h3>

@@ -26,11 +26,17 @@ export default function Profile(){
         })
     } 
 
+
     return(
     <Container id="profile">
         <Row>
+            <Col>
+                <h2>Mi GitHub</h2>
+            </Col>
+        </Row>
+        <Row>
             <Col id="imageProfile">
-                <a href="https://github.com/LlucGYM" ><img src={image}/></a>
+                <a href="https://github.com/LlucGYM" ><img src={image} /></a>
             </Col>
         </Row>
         <Row>
