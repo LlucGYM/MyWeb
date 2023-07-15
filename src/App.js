@@ -1,20 +1,15 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
 import Main from './main';
 import Footer from './footer';
 import Header from './Header';
+
 import Spinner from 'react-bootstrap/Spinner';
 
 function App() {
   
-  function sleep(ms){
-    return new Promise(resolve => setTimeout(resolve,ms));
-  }
-  async function wait(){
-    await sleep(5000);
-    
-  }
+ 
   
   return (
     <div className="App">
@@ -34,8 +29,6 @@ function App() {
         </a>
       </header>
       */}
-      {wait}
-      <Spinner animation="border" />;
       <Header/>
       <Main/>
       <Footer/>
