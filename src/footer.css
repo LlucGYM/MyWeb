@@ -2,18 +2,37 @@
 #footer{
     color: white;
     background-color: #171e27;
-    padding: 5% 5% 5% 5%;
-    position: relative;
 }
 
-#footer div{
-    display: inline;
+#footer .row{
+    padding: 2.5% 2.5% 2.5% 2.5%;
 }
-
 
 #footer .col{
-    margin: 2.5%;
+    display: inline;
+    padding: 0% 20%;
 }
+
+#footer .col i{
+    margin: 1.5%;
+}
+
+#footer #titles{
+    padding: 2.5% 2.5% 0% 2.5%;
+}
+
+#footer #titles .col-6{
+    display: inline;
+    padding: 0% 20%;
+}
+
+#footer #CopyRight{
+    background-color: #140f07;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+
+}
+
+
 
 .color1 {color: #140f07;}
 .color2 {color: #171e27;}
