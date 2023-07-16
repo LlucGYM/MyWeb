@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import fontawesome from '@fortawesome/fontawesome';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./footer.css";
 
 export default function Footer(){

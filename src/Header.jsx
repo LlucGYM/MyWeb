@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import "./Header.css";
 import Video from './components/video.jsx';
+import StartButton from "./components/StartButton";
 
 export default function Header(){
 
@@ -10,6 +11,7 @@ export default function Header(){
         <Container id="header">
            <Row>
                 <Col>
+                    <StartButton/>
                     <div className="overlay"></div>
                     <Video/>
                     <div className="content">
