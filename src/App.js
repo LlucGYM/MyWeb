@@ -1,18 +1,12 @@
-import logo from './assets/logo.svg';
-import './App.css';
-import React from 'react';
-import Main from './main';
-import Footer from './footer';
-import Header from './Header';
+import './App.css'
+import React from 'react'
+import Main from './main'
+import Footer from './footer'
+import Header from './Header'
 
-import Spinner from 'react-bootstrap/Spinner';
-
-function App() {
-  
- 
-  
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       {/*
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,13 +23,11 @@ function App() {
         </a>
       </header>
       */}
-      <Header/>
-      <Main/>
-      <Footer/>
-    
+      <Header />
+      <Main />
+      <Footer />
     </div>
-  
-  );
+  )
 }
 
-export default App;
+export default App

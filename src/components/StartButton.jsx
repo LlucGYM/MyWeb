@@ -5,7 +5,7 @@ export default function StartButton() {
     const [active, setActive] = useState(false);
 
     async function handleOnClick(e) {
-        await sleep(1000);
+        await sleep(300); //0.3 segundos
         setActive(true);
     }
     
@@ -14,12 +14,13 @@ export default function StartButton() {
     }
 
     return(
-        <div className={active ? "StartButton active" : "StartButton"} >
-            <button className="cybr-btn" onClick={handleOnClick}>
-            START<span aria-hidden>_</span>
-            <span aria-hidden className="cybr-btn__glitch">START</span>
-            <span aria-hidden className="cybr-btn__tag">R25</span>
+        <div className="ContainerButton" >
+            <button className={active ? "StartButton active" : "StartButton"} onClick={handleOnClick}>
+                START
             </button>
+            <div id="content">
+            
+            </div>
         </div>
     );
 }

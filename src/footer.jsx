@@ -1,25 +1,23 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./footer.css";
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import './footer.css'
 
-export default function Footer(){
-
-    const setActiveButton = (e) =>{
-       
-        if (e.target.className && typeof e.target.className.includes() !== undefined && (e.target.className.includes("fa-bounce")) ){
-            e.target.className=e.target.className.replace(" fa-bounce"," ");
-        }else{
-            e.target.className = e.target.className + " fa-bounce";
-        }
+export default function Footer () {
+  const setActiveButton = (e) => {
+    if (e.target.className && typeof e.target.className.includes() !== 'undefined' && (e.target.className.includes('fa-bounce'))) {
+      e.target.className = e.target.className.replace(' fa-bounce', ' ')
+    } else {
+      e.target.className = e.target.className + ' fa-bounce'
     }
+  }
 
-    const currentYear = () =>{
-        var y = new Date().getFullYear();
-        return (y.toString());
-    }
+  const currentYear = () => {
+    const y = new Date().getFullYear()
+    return (y.toString())
+  }
 
-    return(
-        <footer id="footer">
+  return(
+    <footer id="footer">
             <Container >
                 <Row id="titles">
                     <Col>
@@ -67,5 +65,5 @@ export default function Footer(){
                 </Row>
             </Container>
         </footer>
-    );
+  )
 }
