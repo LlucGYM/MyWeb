@@ -1,8 +1,9 @@
 import './App.css'
 import React from 'react'
-import Main from './main'
 import Footer from './footer'
 import Header from './Header'
+import GitHub from './components/GitHub'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App () {
   return (
@@ -24,7 +25,11 @@ function App () {
       </header>
       */}
       <Header />
-      <Main />
+      <Router>
+        <Routes>
+          <Route path="/" Component={GitHub}/>
+        </Routes>
+      </Router>
       <Footer />
     </div>
   )

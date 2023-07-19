@@ -46,13 +46,19 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  display: block;
   z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
+
+.ContainerMenuButton.active{
+  visibility:visible;
+  opacity: 1;
+  z-index: 4;
+}
+
 
 .StartButton{
   top: 40%;
@@ -63,8 +69,9 @@
   background-color: transparent;
   border: solid 2px white;
   color: white;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .Button{
   margin: 1em;
@@ -75,20 +82,19 @@
   background-color: transparent;
   border: solid 2px white;
   color: white;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
   position: relative;
-
+  transition: all 0.5s ease-in-out;
 }
 
 .StartButton:hover,.Button:hover{
   border-color: aquamarine;
   color: aquamarine;
-  animation: 3s linear 1s infinite alternate slidein;
+  letter-spacing: 0.5em;
 }
 
 .StartButton.active{
   top: 0;
-  transition: all 1s ease-in-out;
   position: relative;
   opacity: 0;
 }

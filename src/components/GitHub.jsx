@@ -1,15 +1,15 @@
 import React from "react";
-import RepoList from "./components/RepoList";
-import Profile from "./components/Profile";
+import RepoList from "./RepoList";
+import Profile from "./Profile";
 import { Col, Container, Row } from "react-bootstrap";
 
-import "./main.css";
+import "./GitHub.css";
 
-export default function Main(){
+export default function GitHub(){
 
     return(
-        <main>
-        <Container id="main">
+        <main id="main">
+        <Container id="GitHub">
             <section>
                 <Row>
                     <Col>
@@ -22,6 +22,5 @@ export default function Main(){
             </section>
         </Container>
         </main>
-        
     );
 }

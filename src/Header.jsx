@@ -7,18 +7,22 @@ import StartButton from "./components/StartButton";
 
 export default function Header(){
 
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
 
-    /*useEffect(() =>{
-        showContent()
-    })*/
+    useEffect(() =>{
+
+    },[active])
+
+    function isActive(active){
+        setActive(active);
+    }
  
     return(
     <header id="header">
-        <StartButton/>
+        <StartButton isActive={isActive}/>
         <div className="overlay"></div>
-        <Video/>
-        <Menu />
+        <Video />
+        <Menu active={active}/>
     </header>
     );
 }
