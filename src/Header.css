@@ -1,15 +1,4 @@
 
-#header .video{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
-
-#header video{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
 /*
 #header #content{
     position: fixed;
@@ -23,29 +12,31 @@
     
 }*/
 
-#header .overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-    z-index: 1;
-}
-
 
 .ContainerButton{
     position: fixed;
     width: 100%;
     height: 100%;
-    display: block;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
     z-index: 4;
+    margin-top: 8em;
+    transition: all 0.2s ease-in-out;
+}
+
+.ContainerButton.active{
+  height: 0em;
+  margin: 0em;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .ContainerMenuButton{
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   z-index: 3;
   visibility: hidden;
@@ -59,42 +50,73 @@
   z-index: 4;
 }
 
+.ContainerButton div{
+  margin: 1em 1em;
+  align-items: center;
+}
+
+.ContainerButton img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  transition: all .4s ease-in-out; 
+}
+
+.ContainerButton img:hover {
+  scale: 1.1;
+  box-shadow: 0 8px 8px 0 aquamarine;
+}
+
+.titleStart{
+  font-family: 'Common Pixel', sans-serif;
+  font-size: 3em;
+  color: aquamarine;
+  transition: all 0.2s ease-in-out;
+}
+
+.titleStart:hover{
+  color: grey;
+}
+
+.textStart.active, .titleStart.active{
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
 
 .StartButton{
-  top: 40%;
+  cursor: pointer;
   font-family: 'Common Pixel', sans-serif;
   font-size:x-large;
-  height: 4em;
-  width: 15em;
+  height: 2em;
+  width: 8em;
   background-color: transparent;
   border: solid 2px white;
   color: white;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
 .Button{
   margin: 1em;
   font-family: 'Common Pixel', sans-serif;
   font-size:x-large;
-  height: 4em;
-  width: 15em;
+  height: 2em;
+  width: 13em;
   background-color: transparent;
   border: solid 2px white;
   color: white;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .StartButton:hover,.Button:hover{
   border-color: aquamarine;
   color: aquamarine;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 .StartButton.active{
-  top: 0;
-  position: relative;
   opacity: 0;
 }

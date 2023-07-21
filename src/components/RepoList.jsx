@@ -1,33 +1,35 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import RepoListItem from "./RepoListItem";
 import { Col, Row, Container } from "react-bootstrap";
+import useGitHub from "../Services/ConectionGitHub";
 
 export default function RepoList() {
-    const repoUserName = "LlucGYM"
-    const [arrayItems, setArrayItems] = useState([]);
-    
+    const {repos, reprosGitHub} = useGitHub();
+    const [arrayItems, setArrayItems] = useState([]);    
+
+
     useEffect(()=>  {
-        connectionGitHub();
+        reprosGitHub();
+        listarRepos();
     });
 
-    async function connectionGitHub(){
-        await fetch(`https://api.github.com/users/${repoUserName}/repos`)
-        .then(response => response.json())
-        .then(data =>{
-            const items = data.map((arrayItem) => {
+    function listarRepos () {
+        if(repos != null){
+            const items = repos.map((repo) => {
                 return (
                     <RepoListItem 
-                        key={arrayItem.id}
-                        name={arrayItem.full_name}
-                        dataCreation = {arrayItem.created_at}
-                        dataLastUpdate = {arrayItem.updated_at}
-                        description={arrayItem.description} 
-                        topics = {arrayItem.topics}
+                        key={repo.id}
+                        name={repo.full_name}
+                        dataCreation = {repo.created_at}
+                        dataLastUpdate = {repo.updated_at}
+                        description={repo.description} 
+                        topics = {repo.topics}
                     />
                 );
             })
-            setArrayItems(items);
-        }) 
+            setArrayItems(items);   
+        }
+       
     }
 
     return (

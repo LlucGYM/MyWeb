@@ -1,31 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Profile.css";
+import useGitHub from "../Services/ConectionGitHub";
 
 export default function Profile(){
-    const [name,setName] = useState("")
-    const [login,setLogin] = useState("")
-    const [image,setImage] = useState("")
-    const [description,setDescription] = useState("")
-    const [company,setCompany] = useState("")
-    const repoUserName = "LlucGYM"
-
-    useEffect(() => {
-        connectionGitHub()
-    })
-
-    async function connectionGitHub(){
-        await fetch(`https://api.github.com/users/${repoUserName}`)
-        .then(response => response.json())
-        .then(data =>{
-                setName(data.name);
-                setLogin(data.login);
-                setImage(data.avatar_url);
-                setDescription(data.description);
-                setCompany(data.company);
-        })
-    } 
-
+    
+    const {name,nick,image,description, company, profileGitHub} = useGitHub();
+    
+    useEffect(() =>{
+        profileGitHub();
+    },[])
 
     return(
     <Container id="profile">
@@ -35,14 +19,14 @@ export default function Profile(){
             </Col>
         </Row>
         <Row>
-            <Col id="imageProfile">
+            <Col className="imageProfile">
                 <a href="https://github.com/LlucGYM" ><img src={image} /></a>
             </Col>
         </Row>
         <Row>
             <Col>
                 <p>{name}</p>
-                <p>{login}</p>
+                <p>{nick}</p>
                 <p>{description}</p>
                 <p>{company}</p>
             </Col>

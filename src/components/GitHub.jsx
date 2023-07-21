@@ -8,7 +8,6 @@ import "./GitHub.css";
 export default function GitHub(){
 
     return(
-        <main id="main">
         <Container id="GitHub">
             <section>
                 <Row>
@@ -21,6 +20,5 @@ export default function GitHub(){
                 </Row>
             </section>
         </Container>
-        </main>
     );
 }

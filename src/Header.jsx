@@ -10,7 +10,6 @@ export default function Header(){
     const [active, setActive] = useState(false);
 
     useEffect(() =>{
-
     },[active])
 
     function isActive(active){
@@ -20,8 +19,6 @@ export default function Header(){
     return(
     <header id="header">
         <StartButton isActive={isActive}/>
-        <div className="overlay"></div>
-        <Video />
         <Menu active={active}/>
     </header>
     );
