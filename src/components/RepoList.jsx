@@ -11,7 +11,7 @@ export default function RepoList() {
     useEffect(()=>  {
         reprosGitHub();
         listarRepos();
-    });
+    },[repos]);
 
     function listarRepos () {
         if(repos != null){

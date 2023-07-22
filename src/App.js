@@ -1,17 +1,18 @@
 import './App.css'
 import { MiProfileContext } from './Context/miProfileContext'
-import React from 'react'
-import Footer from './footer'
-import Header from './Header'
-import GitHub from './components/GitHub'
-import Video from './components/video'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import Footer from './footer';
+import Header from './Header';
+import GitHub from './components/GitHub';
+import Video from './components/video';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutMe from './components/AboutMe';
 
 function App () {
   return (
-    <MiProfileContext>
-      <div className='App'>
-        {/*
+  <MiProfileContext>
+    <div className='App'>
+      {/*
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -26,21 +27,21 @@ function App () {
             Learn React
           </a>
         </header>
-        */}
+     */}
+      <Router>
         <Header />
         <Video />
         <div className="overlay"></div>
         <main id='main'>
-          <Router>
-            <Routes>
-              <Route path="/" Component={GitHub}/>
-            </Routes>
-          </Router>
+          <Routes>
+            <Route path='/' element={<AboutMe />}/>
+            <Route exact path='/GitHub' element={<GitHub />}/>
+          </Routes>
         </main>
-        
         <Footer />
-      </div>
-    </MiProfileContext>
+      </Router>
+    </div>
+  </MiProfileContext>
   )
 }
 
