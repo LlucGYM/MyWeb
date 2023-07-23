@@ -1,6 +1,12 @@
 
 
 
+#Menu{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .ContainerButton{
     position: fixed;
     display:flex;
@@ -24,16 +30,22 @@
 
 .ContainerMenuButton{
   position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  display: flex;
+  width: calc(100% - 40em);
   height: auto;
-  display: block;
   z-index: 3;
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease-in-out;
   background-color: transparent;
+  margin-top: 2em;
+  padding: 0em 20em 0em 20em;
+}
+
+.ContainerMenuButton .col{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .ContainerMenuButton.active{
@@ -90,7 +102,7 @@
 }
 
 .Button{
-  margin: 1em;
+  margin:auto;
   font-family: 'Common Pixel', sans-serif;
   font-size: large;
   height: 2em;

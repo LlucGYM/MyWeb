@@ -20,12 +20,9 @@ code {
     monospace;
 }
 
-#root{
-  text-align: center;
-}
+
 
 p, h4, h1, h2, h3{
-  display: inline;
   margin: 0;
   font-weight:normal;
 }

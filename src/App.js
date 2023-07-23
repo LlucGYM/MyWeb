@@ -7,6 +7,8 @@ import GitHub from './components/GitHub';
 import Video from './components/video';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
+import Social from './components/Social';
+import ContactMe from './components/ContactMe';
 
 function App () {
   return (
@@ -36,6 +38,8 @@ function App () {
           <Routes>
             <Route path='/' element={<AboutMe />}/>
             <Route exact path='/GitHub' element={<GitHub />}/>
+            <Route exact path='/Social' element={<Social />}/>
+            <Route exact path='/ContactMe' element={<ContactMe />}/>
           </Routes>
         </main>
         <Footer />
