@@ -7,7 +7,7 @@ export default function AboutMe () {
         <section>   
             <Row>
                 <Col>
-                    <h2>ABOUT ME</h2>
+                    <h2 className="titleSection">ABOUT ME</h2>
                 </Col>
             </Row>
 

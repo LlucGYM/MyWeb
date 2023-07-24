@@ -15,7 +15,7 @@ export default function Profile(){
     <Container id="profile">
         <Row>
             <Col>
-                <h2>Mi GitHub</h2>
+                <h2 className="titleSection">MI GITHUB</h2>
             </Col>
         </Row>
         <Row>

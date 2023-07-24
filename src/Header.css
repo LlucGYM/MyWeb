@@ -92,7 +92,7 @@
   font-family: 'Common Pixel', sans-serif;
   font-size:x-large;
   height: 2em;
-  width: 8em;
+  width: 13em;
   background-color: transparent;
   border: solid 2px white;
   color: white;
@@ -122,6 +122,7 @@
   border-color: aquamarine;
   color: aquamarine;
   letter-spacing: 0.3em;
+  width: 15em;
 }
 
 .StartButton.active{
