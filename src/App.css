@@ -10,7 +10,7 @@
     margin: 0;
     position: relative;
     z-index: 3;
-    padding: 10em 20em 0em 20em;
+    padding: 10% 20% 0% 20%;
 }
 
 .video{
@@ -36,8 +36,10 @@
 
 .titleSection{
   font-family:'Common Pixel', sans-serif; 
-  font-size: x-large;
+  font-size: 2em;
+  border-bottom: solid 2px rgb(255, 21, 224);
   color: aquamarine;
+  margin-bottom: 5%;
 }
 
 .App-logo {

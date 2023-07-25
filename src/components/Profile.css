@@ -1,7 +1,7 @@
 
 .imageProfile img {
-    height: 10%;
-    width: 10%;
+    height: 10em;
+    width: 10em;
     border-radius: 50%;
     transition: all .4s ease-in-out; 
 }
@@ -9,4 +9,8 @@
 .imageProfile img:hover {
     scale: 1.1;
     box-shadow: 0 8px 8px 0 aquamarine;
+}
+
+#profile .row{
+    margin-bottom: 3%;
 }

@@ -25,10 +25,10 @@ export default function Profile(){
         </Row>
         <Row>
             <Col>
-                <p>{name}</p>
-                <p>{nick}</p>
-                <p>{description}</p>
-                <p>{company}</p>
+                <p>Name: {name}</p>
+                <p>Nick: {nick}</p>
+                <p>Description: {description}</p>
+                <p>Actual Company: {company}</p>
             </Col>
         </Row>
         

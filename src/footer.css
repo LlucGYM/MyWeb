@@ -6,7 +6,7 @@
     width: auto;
     height: auto;
     z-index: 2;
-    padding: 0em 20em 0em 20em;
+    padding: 0% 20% 0% 20%;
 }
 
 #footer .container{
@@ -31,7 +31,7 @@
 
 #footer .col i{
     margin: 1.5%;
-    color: rgb(233, 37, 207);
+    color: rgb(255, 21, 224);
 }
 
 #footer ul{
