@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import TitleSection from "./TitleSection";
 
 export default function ContactMe () {
     return (<Container id="aboutMe">
     <section>   
         <Row>
             <Col>
-                <h2 className="titleSection">CONTACT ME</h2>
+                <TitleSection Title = "CONTACT ME"/>
             </Col>
         </Row>
 

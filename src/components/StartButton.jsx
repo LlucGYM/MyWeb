@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useGitHub from "../Services/ConectionGitHub";
+import TypewriterComponent from "typewriter-effect";
 
 export default function StartButton(props) {
 
@@ -31,9 +32,19 @@ export default function StartButton(props) {
     return(
         <div className={active ? "ContainerButton active" : "ContainerButton"}>
             <div><a href="https://github.com/LlucGYM"><img src={image} alt='Imagen de Perfil'/></a></div>
-            <div><span className={active ? "titleStart active" : "titleStart"}>{name}</span></div>
             <div>
-                <span className={active ? "textStart active" : "textStart"}>Hi!!, If you are here it is because you want to know more about me right? ;D, Explore my WEB!</span>
+                <TypewriterComponent
+                    onInit={(typewriter) => {
+                        typewriter
+                        .typeString("Luke Sky")
+                        .deleteAll()
+                        .typeString("Lucas Garrido")
+                        .start();
+                }}
+                />
+            </div>
+            <div>
+                <span className={active ? "textStart active" : "textStart"}>DO YOU WANT TO PLAY A GAME?, <span className="enfasis1">EXPLORE MY</span> <span className="enfasis2">WEB</span><span className="enfasis1">!</span></span>
             </div>
             <div><button className={active ? "StartButton active" : "StartButton"} onClick={handleOnClick}>
                 START

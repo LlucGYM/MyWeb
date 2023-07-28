@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import RepoListItem from "./RepoListItem";
 import { Col, Row, Container } from "react-bootstrap";
 import useGitHub from "../Services/ConectionGitHub";
+import TitleSection from "./TitleSection";
 
 export default function RepoList() {
     const {repos, reprosGitHub} = useGitHub();
@@ -34,11 +35,6 @@ export default function RepoList() {
 
     return (
         <Container id="Repositorios">
-            <Row>
-                <Col>
-                <h2>Repositorios</h2>
-                </Col>
-            </Row>
             <Row>
                 <Col>
                     {arrayItems}

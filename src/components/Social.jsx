@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import TitleSection from "./TitleSection";
 
 export default function Social () {
 
@@ -7,7 +8,7 @@ export default function Social () {
     <section>   
         <Row>
             <Col>
-                <h2 className="titleSection">SOCIAL</h2>
+                <TitleSection Title="SOCIAL"/>
             </Col>
         </Row>
 

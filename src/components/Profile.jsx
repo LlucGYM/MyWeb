@@ -14,21 +14,16 @@ export default function Profile(){
     return(
     <Container id="profile">
         <Row>
-            <Col>
-                <h2 className="titleSection">MI GITHUB</h2>
-            </Col>
-        </Row>
-        <Row>
             <Col className="imageProfile">
                 <a href="https://github.com/LlucGYM" ><img src={image} /></a>
             </Col>
         </Row>
         <Row>
             <Col>
-                <p>Name: {name}</p>
-                <p>Nick: {nick}</p>
-                <p>Description: {description}</p>
-                <p>Actual Company: {company}</p>
+                <p><span className="profileText">Name: </span>{name}</p>
+                <p><span className="profileText">Nick: </span>{nick}</p>
+                <p><span className="profileText">Description: </span>{description}</p>
+                <p><span className="profileText">Company: </span>{company}</p>
             </Col>
         </Row>
         

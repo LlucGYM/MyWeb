@@ -71,26 +71,25 @@
   box-shadow: 0 8px 8px 0 aquamarine;
 }
 
-.titleStart{
-  font-family: 'Common Pixel', sans-serif;
+.Typewriter span{
   font-size: 3em;
   color: aquamarine;
   transition: all 0.2s ease-in-out;
 }
 
-.titleStart:hover{
+.Typewriter span:hover{
   color: grey;
 }
 
-.textStart.active, .titleStart.active{
+.textStart.active{
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
 
 .StartButton{
   cursor: pointer;
-  font-family: 'Common Pixel', sans-serif;
   font-size:x-large;
+  font-family: 'Hemi Head', sans-serif;
   height: 2em;
   width: 13em;
   background-color: transparent;
@@ -102,8 +101,9 @@
 }
 
 .Button{
+  cursor: pointer;
   margin:auto;
-  font-family: 'Common Pixel', sans-serif;
+  font-family: 'Hemi Head', sans-serif;
   font-size: large;
   height: 2em;
   width: 13em;
@@ -127,4 +127,18 @@
 
 .StartButton.active{
   opacity: 0;
+}
+
+.enfasis1{
+  color: aquamarine;
+  transition: all 0.1s ease-in-out;
+}
+
+.enfasis2{
+  color: rgb(255, 21, 224);
+  transition: all 0.1s ease-in-out;
+}
+
+.enfasis1:hover, .enfasis2:hover{
+  font-size: 1.2em;
 }
