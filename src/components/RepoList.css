@@ -1,0 +1,41 @@
+
+#Repositorios .row{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+#Repositorios .row .col{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20%;
+}
+
+
+.ObjetoRepo{
+    cursor: pointer;
+    padding: 2%;
+    position: relative;
+    background-color: #171e27;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.ObjetoRepo:hover{
+    box-shadow: 5px 10px aquamarine;
+}
+
+.ObjetoRepo h3{
+    color: aquamarine;
+    font-size: x-large;
+}
+
+.ObjetoRepo .content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ObjetoRepo img{
+    width: 100%;
+    height: 100%;
+}
