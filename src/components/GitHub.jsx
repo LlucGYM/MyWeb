@@ -12,7 +12,7 @@ export default function GitHub(){
             <section>
                 <Row>
                     <Col>
-                        <TitleSection Title="MY GITHUB"/>
+                        <TitleSection Title="MY PROJECTS"/>
                     </Col>
                 </Row>
             

@@ -6,7 +6,7 @@
 #main{
     visibility: visible;
     width: auto;
-    height: 100vh;
+    height: auto;
     margin: 0;
     position: relative;
     z-index: 3;
