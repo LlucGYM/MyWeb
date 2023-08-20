@@ -6,11 +6,7 @@ export default function Social () {
 
     return(<Container id="aboutMe">
     <section>   
-        <Row>
-            <Col>
-                <TitleSection Title="SOCIAL"/>
-            </Col>
-        </Row>
+        <TitleSection Title="SOCIAL"/>
 
     </section>
 </Container>)

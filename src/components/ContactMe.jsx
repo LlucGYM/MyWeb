@@ -5,11 +5,8 @@ import TitleSection from "./TitleSection";
 export default function ContactMe () {
     return (<Container id="aboutMe">
     <section>   
-        <Row>
-            <Col>
+    
                 <TitleSection Title = "CONTACT ME"/>
-            </Col>
-        </Row>
 
     </section>
 </Container>)

@@ -1,0 +1,24 @@
+#aboutMe .row{
+    display: flex;
+}
+
+
+#CVdiv{
+    margin: auto 1em auto auto;
+}
+
+.CVbutton{
+    height: 2em;
+    width: 10em;
+    cursor: pointer;
+    font-family: 'Hemi Head', sans-serif;
+    font-size: large;
+    border-radius: 1em;
+    background-color: aquamarine;
+    transition: all .2s ease-in-out;
+}
+
+.CVbutton:hover{
+    color: aquamarine;
+    background-color: gray;
+}

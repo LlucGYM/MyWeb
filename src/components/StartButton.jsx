@@ -21,13 +21,6 @@ export default function StartButton(props) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    /*
-    const viewButton = () => { 
-        return (<></>
-            
-        )
-    }*/
-        
         
     return(
         <div className={active ? "ContainerButton active" : "ContainerButton"}>

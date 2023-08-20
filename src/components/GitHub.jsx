@@ -10,12 +10,7 @@ export default function GitHub(){
     return(
         <Container id="GitHub">
             <section>
-                <Row>
-                    <Col>
-                        <TitleSection Title="MY PROJECTS"/>
-                    </Col>
-                </Row>
-            
+                <TitleSection Title="MY PROJECTS"/>
                 <Row>
                     <Col><RepoList/></Col>
                 </Row>
