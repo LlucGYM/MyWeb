@@ -1,6 +1,11 @@
 #aboutMe .row{
     display: flex;
+    animation-duration: 1.5s;
+    animation-name: slideinAbout;
+    margin-top: 5%;
 }
+
+
 
 
 #CVdiv{
@@ -16,9 +21,29 @@
     border-radius: 1em;
     background-color: aquamarine;
     transition: all .2s ease-in-out;
+    border: none;
 }
 
 .CVbutton:hover{
     color: aquamarine;
     background-color: gray;
+}
+#dobleSection{
+    justify-content: center;
+}
+
+#dobleSection .col{
+    width: 100%;
+    text-align: center;
+}
+
+
+@keyframes slideinAbout {
+    from {
+      margin-top: 50%;
+    }
+  
+    to {
+      margin-top: 5%;
+    }
 }

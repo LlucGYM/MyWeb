@@ -4,7 +4,7 @@ import TypewriterComponent from "typewriter-effect";
 
 export default function TitleSection (props) {
 
-    return ( <div id="title" 
+    return ( <div 
         className="titleSection">
             <TypewriterComponent 
         

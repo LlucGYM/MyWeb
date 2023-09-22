@@ -1,0 +1,91 @@
+#Home .row{
+    display: flex;
+    animation-duration: 1.5s;
+    animation-name: slideinAbout;
+    margin-top: 5%;
+}
+
+.ContainerButton{
+    display:flex;
+    width: auto;
+    height: auto;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    z-index: 4;
+    transition: all 0.2s ease-in-out;
+}
+
+.ContainerButton.active{
+  height: 0em;
+  margin: 0em;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ContainerButton div{
+    margin: 1em 0em;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ContainerButton img {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    transition: all .3s ease-in-out; 
+  }
+  
+  .ContainerButton img:hover {
+    scale: 1.1;
+    box-shadow: 0 8px 8px 0 aquamarine;
+  }
+  
+  .textStart{
+    font-size: 1.2em;
+    color: gainsboro;
+  }
+  .textStart.active{
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+  .StartButton{
+    cursor: pointer;
+    font-size:x-large;
+    font-family: 'Hemi Head', sans-serif;
+    height: 2em;
+    width: 13em;
+    background-color: transparent;
+    border: solid 2px aquamarine;
+    color: aquamarine;
+    letter-spacing: 0.2em;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .StartButton:active{
+    background-color: grey;
+  }
+  
+  .StartButton:hover{
+    border-color: rgb(255, 21, 224);
+    color: aquamarine;
+    letter-spacing: 0.3em;
+    width: 100%;
+  }
+
+  .StartButton.active{
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .textStart {
+      font-size: small;
+    }
+  
+    .ContainerButton{
+      top: 10%;
+    }
+  }
+  

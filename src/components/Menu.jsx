@@ -7,7 +7,7 @@ export default function Menu (props) {
         <Container id='Menu'>
             <Row className={props.active ? 'ContainerMenuButton active' : 'ContainerMenuButton'}>
                 <Col >
-                <Link to="/"><button className="Button">ABOUT ME</button></Link>
+                <Link to="AboutMe"><button className="Button">ABOUT ME</button></Link>
                 </Col>
                 <Col >
                 <Link to="/GitHub"><button className="Button">MY PROJECTS</button></Link>

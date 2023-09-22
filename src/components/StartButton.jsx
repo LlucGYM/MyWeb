@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useGitHub from "../Services/ConectionGitHub";
 import TypewriterComponent from "typewriter-effect";
+import { Link } from "react-router-dom";
 
 export default function StartButton(props) {
 
@@ -12,9 +13,10 @@ export default function StartButton(props) {
     })
 
     async function handleOnClick(e) {
-        await sleep(300); //0.3 segundos
+         
         setActive(true);
         props.isActive(true);
+        await sleep(500); //0.3 segundos
     }
     
     function sleep(ms) {
@@ -37,11 +39,23 @@ export default function StartButton(props) {
                 />
             </div>
             <div>
-                <span className={active ? "textStart active" : "textStart"}>DO YOU WANT TO PLAY A GAME?, <span className="enfasis1">EXPLORE MY</span> <span className="enfasis2">WEB</span><span className="enfasis1">!</span></span>
+                <h1 className="enfasis2"> Computer Engineer </h1>
             </div>
-            <div><button className={active ? "StartButton active" : "StartButton"} onClick={handleOnClick}>
-                START
-            </button></div>
+            <div>
+                <span className={active ? "textStart active" : "textStart"}>Hello! I am Lucas, a  
+                <span className="enfasis1"> Computer Engineer </span>
+                with more than two years of experience. I have worked as a 
+                <span className="enfasis2"> Junior System Engineer </span> in IT Infrastructure 
+                Consultancy and now I have been working as a 
+                <span className="enfasis2"> Junior Software Engineer </span> in a multinational company 
+                since May 2022. I am currently looking for a job where I can find the opportunity to progress as a 
+                Computer Engineer and face new challenges, as well as improve my professional skills and gain more 
+                experience
+                </span>
+            </div>
+            <div>
+                <Link  to="/AboutMe" ><button onClick={handleOnClick} className={active ? "StartButton active" : "StartButton"} >START</button></Link>
+            </div>
         </div>
     );
 }

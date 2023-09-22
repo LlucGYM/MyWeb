@@ -1,51 +1,29 @@
 
-
-
-#Menu{
-  position: relative;
+#header{
+  position: fixed;
+  z-index: 4;
   width: 100%;
-  height: auto;
 }
 
-.ContainerButton{
-    position: fixed;
-    display:flex;
-    width: 100%;
-    height: auto;
-    display:flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-    z-index: 4;
-    margin-top: 10%;
-    transition: all 0.2s ease-in-out;
-}
 
-.ContainerButton.active{
-  height: 0em;
-  margin: 0em;
-  opacity: 0;
-  visibility: hidden;
-}
 
 .ContainerMenuButton{
-  position: fixed;
   display: flex;
-  width: calc(100% - 40em);
   height: auto;
-  z-index: 3;
   visibility: hidden;
+  justify-content: center;
   opacity: 0;
   transition: all 1s ease-in-out;
   background-color: transparent;
-  margin-top: 2em;
-  padding: 0em 20em 0em 20em;
+  margin-top: 1.5%;
+  padding: 0% 20% 0% 20%;
+
 }
 
 .ContainerMenuButton .col{
-  width: 100%;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .ContainerMenuButton.active{
@@ -54,22 +32,6 @@
   z-index: 4;
 }
 
-.ContainerButton div{
-  margin: 1em 1em;
-  align-items: center;
-}
-
-.ContainerButton img {
-  height: 10em;
-  width: 10em;
-  border-radius: 50%;
-  transition: all .3s ease-in-out; 
-}
-
-.ContainerButton img:hover {
-  scale: 1.1;
-  box-shadow: 0 8px 8px 0 aquamarine;
-}
 
 .Typewriter span{
   font-size: 3em;
@@ -81,24 +43,7 @@
   color: grey;
 }
 
-.textStart.active{
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-}
 
-.StartButton{
-  cursor: pointer;
-  font-size:x-large;
-  font-family: 'Hemi Head', sans-serif;
-  height: 2em;
-  width: 13em;
-  background-color: transparent;
-  border: solid 2px white;
-  color: white;
-  letter-spacing: 0.2em;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
 
 .Button{
   cursor: pointer;
@@ -108,26 +53,24 @@
   height: 2em;
   width: 13em;
   background-color: transparent;
-  border: solid 2px white;
-  color: white;
+  border: solid 2px aquamarine;
+  color: aquamarine;
   letter-spacing: 0.2em;
   position: relative;
   transition: all 0.2s ease-in-out;
 }
-.StartButton:active, .Button:active{
+
+.Button:active{
   background-color: grey;
 }
 
-.StartButton:hover,.Button:hover{
+
+.Button:hover{
   border-color: rgb(255, 21, 224);
   color: aquamarine;
   letter-spacing: 0.3em;
-  width: 15em;
 }
 
-.StartButton.active{
-  opacity: 0;
-}
 
 .enfasis1{
   color: aquamarine;
@@ -141,14 +84,5 @@
 @media screen and (max-width: 800px) {
   .Typewriter span{
     font-size: 2em;
-  }
-}
-@media screen and (max-width: 600px) {
-  .textStart {
-    font-size: small;
-  }
-
-  .ContainerButton{
-    top: 10%;
   }
 }

@@ -21,8 +21,7 @@ export default function Profile(){
         <Row>
             <Col>
                 <p><span className="profileText">Name: </span>{name}</p>
-                <p><span className="profileText">Nick: </span>{nick}</p>
-                <p><span className="profileText">Description: </span>{description}</p>
+                <p><span className="profileText">Job: </span>Software Engineer</p>
                 <p><span className="profileText">Company: </span>{company}</p>
             </Col>
         </Row>
