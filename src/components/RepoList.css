@@ -14,7 +14,7 @@
 .ObjetoRepo{
     cursor: pointer;
     width: auto;
-    height: 28em;
+    height: 23em;
     padding: 3%;
     position: relative;
     background-color: #171e27;
@@ -24,11 +24,11 @@
 }
 
 .ObjetoRepo:hover{
-    box-shadow: 5px 10px rgb(255, 21, 224);
+    box-shadow: 5px 10px #D95204;
 }
 
 .ObjetoRepo h3{
-    color: aquamarine;
+    color: #F2911B;
     font-size: x-large;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .ObjetoRepo .imageContainer{
-    height: 50%;
+    height: 30%;
     margin-top: 2%;
     margin-bottom: 2%;
     border: solid 1px transparent;
@@ -58,19 +58,19 @@
     padding: 0% 0% 1.5% 0%;
 }
 .contentTitle{
-    color: aquamarine;
+    color: #F2911B;
 }
 
 .topic{
     margin-left: 1%;
     padding: 1%;
     border-radius: 20px;
-    background-color: #3a506a;
+    background-color: #59252E;
     transition: all .2s ease-in-out;
 }
 
 .topic:hover{ 
-    color: rgb(255, 21, 224);
+    color: #325573;
 }
 
 

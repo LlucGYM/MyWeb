@@ -1,9 +1,17 @@
 .App {
-  color: white;
-  background: linear-gradient(to top left , #3a506a 90%, aquamarine 90%);
+  color: gainsboro;
+
+  background-image:url("./assets/fondo_campaña.png");
+  background-attachment: fixed;
+  background-size: 45%;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+#root{
+  background: #21384d;
+  background-attachment: fixed;
 
 }
-
 #main{
     visibility: visible;
     width: auto;
@@ -11,7 +19,7 @@
     margin: 0;
     position: relative;
     z-index: 3;
-    padding: 7% 20% 20% 20%;
+    padding: 7% 37% 20% 20%;
     min-height: 100vh;
 }
 
@@ -37,15 +45,14 @@
 }
 
 .titleSection{
-  border-bottom: solid 2px rgb(255, 21, 224);
-  color: aquamarine;
+  border-bottom: solid 2px #D95204;
   margin-bottom: 5%;
   font-size: small;
 }
 
 .subtitleSection{
-  color: aquamarine;
-  margin-bottom: 5%;
+  color: #F2911B;
+  margin-bottom: 2%;
   font-size: 200%;
 }
 
@@ -93,3 +100,26 @@ h1{
     padding: 20% 5% 20% 5%;
   }
 }
+
+
+/* Color Theme Swatches in Hex */
+.Naturaleza-1-hex { color: #59252E; }
+.Naturaleza-2-hex { color: #325573; }
+.Naturaleza-3-hex { color: #F2911B; }
+.Naturaleza-4-hex { color: #F2C288; }
+.Naturaleza-5-hex { color: #D95204; }
+.Naturaleza-6-hex { color: #21384d; }
+
+/* Color Theme Swatches in RGBA */
+.Naturaleza-1-rgba { color: rgba(89, 36, 46, 1); }
+.Naturaleza-2-rgba { color: rgba(50, 84, 114, 1); }
+.Naturaleza-3-rgba { color: rgba(242, 145, 26, 1); }
+.Naturaleza-4-rgba { color: rgba(242, 194, 135, 1); }
+.Naturaleza-5-rgba { color: rgba(216, 82, 4, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Naturaleza-1-hsla { color: hsla(348, 41, 24, 1); }
+.Naturaleza-2-hsla { color: hsla(208, 38, 32, 1); }
+.Naturaleza-3-hsla { color: hsla(33, 89, 52, 1); }
+.Naturaleza-4-hsla { color: hsla(33, 80, 74, 1); }
+.Naturaleza-5-hsla { color: hsla(22, 96, 43, 1); }

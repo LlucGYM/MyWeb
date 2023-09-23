@@ -41,7 +41,6 @@ function App () {
       <Router>
         <Header active={active}/>
         {/*<Video />*/}
-        <div className="overlay"></div>
         <main id='main'>
           <Routes>
             <Route path='/' element={<Home isActive={isActive}/>}/>

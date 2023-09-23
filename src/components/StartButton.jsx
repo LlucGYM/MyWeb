@@ -33,28 +33,18 @@ export default function StartButton(props) {
                         typewriter
                         .typeString("Luke Sky")
                         .deleteAll()
-                        .typeString("Lucas Garrido")
+                        .typeString("Lucas Garrido Antolino")
                         .start();
                 }}
                 />
             </div>
             <div>
-                <h1 className="enfasis2"> Computer Engineer </h1>
-            </div>
-            <div>
-                <span className={active ? "textStart active" : "textStart"}>Hello! I am Lucas, a  
-                <span className="enfasis1"> Computer Engineer </span>
-                with more than two years of experience. I have worked as a 
-                <span className="enfasis2"> Junior System Engineer </span> in IT Infrastructure 
-                Consultancy and now I have been working as a 
-                <span className="enfasis2"> Junior Software Engineer </span> in a multinational company 
-                since May 2022. I am currently looking for a job where I can find the opportunity to progress as a 
-                Computer Engineer and face new challenges, as well as improve my professional skills and gain more 
-                experience
+                <span className={active ? "textStart active" : "textStart"}> Hi, I'm Lucas and I'm a <span className="enfasis2"> Computer Engineer</span>.  
+                 I invite you to explore my WEB and to contact me if you find it interesting.
                 </span>
             </div>
             <div>
-                <Link  to="/AboutMe" ><button onClick={handleOnClick} className={active ? "StartButton active" : "StartButton"} >START</button></Link>
+                <Link  to="/AboutMe" ><button onClick={handleOnClick} className={active ? "StartButton active" : "StartButton"} >WELCOME</button></Link>
             </div>
         </div>
     );

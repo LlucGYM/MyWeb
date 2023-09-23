@@ -19,14 +19,14 @@
     font-family: 'Hemi Head', sans-serif;
     font-size: large;
     border-radius: 1em;
-    background-color: aquamarine;
+    background-color: #F2911B;
     transition: all .2s ease-in-out;
     border: none;
 }
 
 .CVbutton:hover{
-    color: aquamarine;
-    background-color: gray;
+    color: #F2911B;
+    background-color: #59252E;
 }
 #dobleSection{
     justify-content: center;

@@ -35,7 +35,7 @@
 
 .Typewriter span{
   font-size: 3em;
-  color: aquamarine;
+  color: #F2911B;
   transition: all 0.2s ease-in-out;
 }
 
@@ -53,8 +53,8 @@
   height: 2em;
   width: 13em;
   background-color: transparent;
-  border: solid 2px aquamarine;
-  color: aquamarine;
+  border: solid 2px #F2911B;
+  color: #F2911B;
   letter-spacing: 0.2em;
   position: relative;
   transition: all 0.2s ease-in-out;
@@ -66,19 +66,19 @@
 
 
 .Button:hover{
-  border-color: rgb(255, 21, 224);
-  color: aquamarine;
+  border-color: #325573;
+  color: #F2911B;
   letter-spacing: 0.3em;
 }
 
 
 .enfasis1{
-  color: aquamarine;
+  color: #F2911B;
   transition: all 0.1s ease-in-out;
 }
 
 .enfasis2{
-  color: rgb(255, 21, 224);
+  color: #325573;
   transition: all 0.1s ease-in-out;
 }
 @media screen and (max-width: 800px) {

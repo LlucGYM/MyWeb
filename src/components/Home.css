@@ -38,7 +38,7 @@
   
   .ContainerButton img:hover {
     scale: 1.1;
-    box-shadow: 0 8px 8px 0 aquamarine;
+    box-shadow: 0 8px 8px 0 #D95204;
   }
   
   .textStart{
@@ -57,8 +57,8 @@
     height: 2em;
     width: 13em;
     background-color: transparent;
-    border: solid 2px aquamarine;
-    color: aquamarine;
+    border: solid 2px #F2911B;
+    color: #F2911B;
     letter-spacing: 0.2em;
     position: relative;
     transition: all 0.4s ease-in-out;
@@ -69,8 +69,8 @@
   }
   
   .StartButton:hover{
-    border-color: rgb(255, 21, 224);
-    color: aquamarine;
+    border-color: #D95204;
+    color: #F2911B;
     letter-spacing: 0.3em;
     width: 100%;
   }

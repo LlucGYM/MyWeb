@@ -33,11 +33,11 @@
 
 #footer .col i{
     margin: 6%;
-    color: rgb(255, 21, 224);
+    color: #D95204;
 }
 
 #footer .col i:hover{
-    color: aquamarine;
+    color: #F2911B;
 }
 
 #footer ul{
@@ -52,7 +52,7 @@
 #footer #titles{
     padding: 2.5% 0% 0% 0%;
     font-size: x-large;
-    color: aquamarine;
+    color: #F2911B;
 }
 
 #footer #CopyRight{
@@ -60,14 +60,6 @@
     text-align: center;
 }
 
-
-
-
-.color1 {color: #140f07;}
-.color2 {color: #171e27;}
-.color3 {color: #3a506a;}
-.color4 {color: #6086b5;}
-.color5 {color: #8bc3fa;}
 
 
 @media screen and (max-width: 600px) {
