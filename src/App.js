@@ -10,7 +10,7 @@ import AboutMe from './components/AboutMe';
 import Social from './components/Social';
 import ContactMe from './components/ContactMe';
 import Home from './components/Home';
-
+import img from './assets/fondo_campaña.png';
 function App () {
 
   const [active, setActive] = useState(false);
@@ -38,7 +38,7 @@ function App () {
           </a>
         </header>
      */}
-     <div className='backImage'></div>
+     <div className='backImage'><img src={img}></img></div>
       <Router>
         <Header active={active}/>
         {/*<Video />*/}

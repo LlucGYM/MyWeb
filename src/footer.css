@@ -5,7 +5,7 @@
     background-color: #171e27;
     width: auto;
     height: auto;
-    z-index: 2;
+    z-index: 99;
     bottom: 0;
     padding: 0% 20% 0% 20%;
 }
