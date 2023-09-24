@@ -1,17 +1,29 @@
 .App {
   color: gainsboro;
+  font-size: 1.2em;
+}
 
+.backImage{
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-image:url("./assets/fondo_campaña.png");
   background-attachment: fixed;
   background-size: 45%;
   background-position: right center;
   background-repeat: no-repeat;
+  transition: all 0.4s ease-in-out;
 }
+
+.backImage:hover{
+  transform: scale(1.1);
+}
+
 #root{
   background: #21384d;
   background-attachment: fixed;
-
 }
+
 #main{
     visibility: visible;
     width: auto;
@@ -19,34 +31,36 @@
     margin: 0;
     position: relative;
     z-index: 3;
-    padding: 7% 37% 20% 20%;
+    padding: 7% 37% 20% 15%;
     min-height: 100vh;
 }
 
-.video{
-  width: 100%;
-  height: 100%;
-  position: fixed;
+section{
+  padding-left: 10%;
+  border-left: solid 0.3em #59252E ;
+  border-radius: 20px;
 }
 
-.video video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.subSection{
+  margin-top: 35%;
 }
-.overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.5);
-  z-index: 1;
+
+.dobleSection{
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
 }
+
+.dobleSection .col{
+  width: 100%;
+  text-align: center;
+}
+
 
 .titleSection{
   border-bottom: solid 2px #D95204;
   margin-bottom: 5%;
+  
   font-size: small;
 }
 

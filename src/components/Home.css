@@ -41,14 +41,7 @@
     box-shadow: 0 8px 8px 0 #D95204;
   }
   
-  .textStart{
-    font-size: 1.2em;
-    color: gainsboro;
-  }
-  .textStart.active{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-  }
+  
   
   .StartButton{
     cursor: pointer;
@@ -65,11 +58,11 @@
   }
 
   .StartButton:active{
-    background-color: grey;
+    background-color: #59252E;
   }
   
   .StartButton:hover{
-    border-color: #D95204;
+    border-color: #325573;
     color: #F2911B;
     letter-spacing: 0.3em;
     width: 100%;

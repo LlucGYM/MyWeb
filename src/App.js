@@ -38,6 +38,7 @@ function App () {
           </a>
         </header>
      */}
+     <div className='backImage'></div>
       <Router>
         <Header active={active}/>
         {/*<Video />*/}

@@ -1,12 +1,32 @@
-#aboutMe .row{
+
+#aboutMe .introSection{
     display: flex;
     animation-duration: 1.5s;
     animation-name: slideinAbout;
     margin-top: 5%;
 }
 
+#aboutMe ul{
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+}
+#aboutMe li{
+    padding: 5%;
+}
+#aboutMe li p{
+    margin: auto;
+    padding: 2%;
+    width: 60%;
+    background-color: #59252E;
+    box-shadow: 5px 5px #D95204;
 
+    transition: all .4s ease-in-out;
+}
 
+#aboutMe li p:hover{
+    color: #325573;
+}
 
 #CVdiv{
     margin: auto 1em auto auto;
@@ -28,19 +48,11 @@
     color: #F2911B;
     background-color: #59252E;
 }
-#dobleSection{
-    justify-content: center;
-}
-
-#dobleSection .col{
-    width: 100%;
-    text-align: center;
-}
 
 
 @keyframes slideinAbout {
     from {
-      margin-top: 50%;
+      margin-top: 30%;
     }
   
     to {

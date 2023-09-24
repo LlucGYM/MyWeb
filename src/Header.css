@@ -61,7 +61,7 @@
 }
 
 .Button:active{
-  background-color: grey;
+  background-color: #59252E;
 }
 
 
@@ -78,7 +78,7 @@
 }
 
 .enfasis2{
-  color: #325573;
+  color: #D95204;
   transition: all 0.1s ease-in-out;
 }
 @media screen and (max-width: 800px) {
