@@ -1,10 +1,10 @@
 import './App.css'
 import { MiProfileContext } from './Context/miProfileContext'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import {motion} from 'framer-motion/dist/framer-motion';
 import Footer from './footer';
 import Header from './Header';
 import GitHub from './components/GitHub';
-import Video from './components/video';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import Social from './components/Social';
@@ -38,7 +38,18 @@ function App () {
           </a>
         </header>
      */}
-     <div className='backImage'><img src={img}></img></div>
+      <motion.div
+        className='backImage'
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 2,
+          delay: 1,
+          ease: [0, 0.71, 0.2, 1.01]
+        }}
+      >
+      <a href='http://localhost:3000'><img src={img}></img></a>
+     </motion.div>
       <Router>
         <Header active={active}/>
         {/*<Video />*/}

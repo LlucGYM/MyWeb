@@ -60,7 +60,7 @@ export default function Footer () {
                
                 <Row id="CopyRight">
                     <Col >
-                        <small>Copyright &copy; {currentYear()}, Lucas Garrido, My web page created by me</small>
+                        <small>Copyright &copy; {currentYear()}, <span className='enfasis1'>Lucas Garrido</span>, My web page created in <span className='enfasis2'>ReactJS</span></small>
                     </Col>
                 </Row>
             </Container>

@@ -13,18 +13,24 @@
 }
 #aboutMe li{
     padding: 5%;
+    margin: auto;
 }
-#aboutMe li p{
+.TagItem{
     margin: auto;
     padding: 2%;
     width: 60%;
     background-color: #59252E;
     box-shadow: 5px 5px #D95204;
-
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-#aboutMe li p:hover{
+#aboutMe li a{
+    color: gainsboro;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+#aboutMe li p:hover, #aboutMe li a:hover{
     color: #325573;
 }
 

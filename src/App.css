@@ -47,11 +47,16 @@ section{
 }
 
 .subSection{
-  margin-top: 35%;
+  margin-top: 50%;
+}
+
+.subSection img{
+  width: 17%;
+  vertical-align: middle;
 }
 
 .dobleSection{
-  margin-top: 35%;
+  margin-top: 50%;
   display: flex;
   justify-content: center;
 }
@@ -73,6 +78,10 @@ section{
   color: #F2911B;
   margin-bottom: 2%;
   font-size: 200%;
+}
+
+.sectionContent{
+  padding-bottom: 5%;
 }
 
 .App-logo {

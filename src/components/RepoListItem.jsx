@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import img_MyWeb from '../images/MyWeb.png';
 import img_SC from '../images/ScriptCopy_3.avif';
 import img_TFG from '../images/TFG.png';
+import img_KNG from '../images/KNG.png';
 
 
 
@@ -10,7 +11,7 @@ export default function RepoListItem(props) {
     const MyWeb = "MyWeb";
     const ScriptCopy = "ScriptCopy";
     const TFG = "TFG";
-
+    const Kangoro="Kangoroo"
     function getImg () {
         var image;
         switch (props.name) {
@@ -22,6 +23,9 @@ export default function RepoListItem(props) {
             break;
             case ScriptCopy:
                 image = img_SC    
+            break;
+            case Kangoro:
+                image = img_KNG    
             break;
             default:
                 image = img_SC;
